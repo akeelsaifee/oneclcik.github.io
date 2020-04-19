@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>home</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/stylemain.css">
+          
+     </head>
+<body class="bgImage">
+   <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                     <div class="card border-info shadow cbox" style="width: 300px;">
+                            <div class="card-header text-center bg-primary text-white " style="border-top-right-radius: 15px; border-top-left-radius: 15px;">
+                             <h3>Login</h3>
+                             <label class="logo"><span style="color: red;">O</span>ne<span style="color: red;">C</span>lick</label>
+                             
+                            
+                            </div>
+                            <div class="card-body">
+          <form action="" method=""  class="needs-validation" novalidate>
+          <div class="form-group">
+          <label for="uname">Email</label>
+          <input type="email" name="email" id="uname" class="form-control" placeholder="oneclick@one.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="Password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password" required>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Remeber Me</label>
+              </div>
+              <input type="submit" value="Login" class="btn btn-primary btn-block">
+              <br>
+              <div class="text-center">
+              <label><a href="forgetpssword.html"><span style="color: green;">Forget Password</span> </a></label>
+              </div>
+              <div class="text-center"> 
+              <label><a href="registered.html"><span style="color: green;">Create New Account SingUp</span> </a></label>
+              </div>        
+            </form>
+
+                            </div>
+                            <div class="card-footer text-center" style="border-bottom-left-radius: 15px;border-bottom-right-radius: 15px;">
+                              <small>&copy;<span style="color: red;">O</span>ne <span style="color: red;">C</span>lick</small> 
+
+                            </div>
+
+                     </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12"></div>
+
+          </div>
+
+   </div>
+<script src="js/jquery-3.5.0.min.js"></script>
+ <script src="js/bootstrap.js"></script>    
+ <script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
+</body>
+</html>
